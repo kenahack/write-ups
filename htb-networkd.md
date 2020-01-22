@@ -27,7 +27,7 @@ PORT    STATE  SERVICE
    1. /photos.php
    1. /upload.php
 
-The `backup.tar` provides us the source files for the above items `ii` to `v`.
+   The `backup.tar` provides us the source files for the above items `ii` to `v`.
 
 1. Upload a malicious image file, that is injected with PHP shell_exec code and name as `.php.png`. We can also study the `upload.php` source file to identify the controls implemented. In our case, the controls are limited file size and file extension.
    1. php shell_exec used: `<?php echo shell_exec($_GET['e'].' 2>&1'); ?>` 
